@@ -1,0 +1,7 @@
+{
+  "extends": "eslint-config-umi",
+  "rules": {
+    "no-debugger": 1,
+    "no-unused-vars": 0
+  }
+}
