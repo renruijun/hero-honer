@@ -1,4 +1,8 @@
 
 .normal {
-  background: #EC79F2;
+}
+
+
+.test{
+  color :var(--PRIMARY)
 }

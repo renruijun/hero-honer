@@ -1,16 +1,21 @@
 {
   "private": true,
   "scripts": {
-    "start": "PORT=3000 umi dev",
-    "build": "umi build",
+    "start": "umi dev",
+    "build": "node color && umi build",
     "test": "umi test",
     "lint": "eslint --ext .js src mock tests",
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "dva": "^2.6.0-beta.6",
     "antd": "^3.19.5",
+    "antd-theme-generator": "^1.1.7",
+    "dva": "^2.6.0-beta.6",
+    "install": "^0.13.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
     "react": "^16.8.6",
+    "react-color": "^2.17.3",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
@@ -28,7 +33,10 @@
     "umi-plugin-react": "^1.8.4"
   },
   "lint-staged": {
-    "*.{js,jsx}": ["eslint --fix", "git add"]
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "engines": {
     "node": ">=8.0.0"

@@ -1,4 +1,4 @@
 
 .normal {
-  background: #8779F2;
+  background: var(--PRIMARY);
 }

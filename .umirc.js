@@ -1,4 +1,6 @@
 // ref: https://umijs.org/config/
+const path = require('path')
+
 export default {
   treeShaking: true,
   routes: [
@@ -47,4 +49,5 @@ export default {
       },
     ],
   ],
+  publicPath:'./'
 };
