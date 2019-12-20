@@ -3,7 +3,6 @@ import { Layout, Menu,Icon,Popover ,message} from 'antd';
 import React from 'react'
 import Link from 'umi/link';
 import {ChromePicker} from 'react-color'
-import render from 'preact-render-to-string';
 const { Header, Content, Footer } = Layout;
 const menuData = [
   { route: 'hero', name: '英雄' },
