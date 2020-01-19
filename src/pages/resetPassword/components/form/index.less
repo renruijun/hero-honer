@@ -1,0 +1,66 @@
+@green_color:#00bc70;
+:global {
+    
+    .formWrapper{
+        .z_form_footer {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 50px;
+           
+           
+        }
+    
+        
+        .ant-form-item-label-left{
+            position: absolute !important;
+            z-index: 10
+        }
+    
+        .ant-form-item-children .ant-input,
+        .ant-form-item-children .ant-input:hover,
+        .ant-form-item-children .ant-input:focus,
+        .has-error .ant-form-item-children .ant-input, 
+        .has-error .ant-form-item-children .ant-input:hover,
+        .has-error .ant-form-item-children .ant-input:focus{
+            padding-left: 100px !important;
+            outline: none !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        }
+    
+        .ant-form-item-children .ant-input{
+            transition: boder .2s linear;
+            border-bottom: 1px solid #ccc !important;
+        }
+        .ant-form-item-children .ant-input:hover,
+        .ant-form-item-children .ant-input:focus{
+            border-bottom: 2px solid @green_color !important;
+        }
+        .has-error .ant-form-item-children .ant-input, 
+        .has-error .ant-form-item-children .ant-input:hover,
+        .has-error .ant-form-item-children .ant-input:focus{
+            border-bottom: 1px solid rgb(252, 59, 59) !important;
+        }
+    
+        .has-error .ant-form-explain, .has-error .ant-form-split{
+            padding-left: 100px;
+        }
+
+
+    
+    }
+
+
+    // antd popover组件样式覆盖【覆盖范围仅限本组件】
+    .ant-popover.popoverCustom.ant-popover-placement-right{
+        left: 980px !important;
+    }
+    
+}
+
+
+
+
+
+

@@ -3,30 +3,11 @@ const path = require('path')
 
 export default {
   treeShaking: true,
-  routes: [
-    {
-      path: '/',
-      component: '../layouts/index',
-      routes: [
-        {
-          path: '/hero',
-          component: './hero',
-        },
-        {
-          path: '/item',
-          component: './item',
-        },
-        {
-          path: '/summoner',
-          component: './summoner',
-        },
-        {
-          path: '/',
-          component: '../pages/index',
-        },
-      ],
-    },
-  ],
+  alias: {
+    '@utils': path.resolve(__dirname, 'src/utils'),
+    '@components': path.resolve(__dirname, 'src/components'),
+    '@styles': path.resolve(__dirname, 'src/styles'),
+  },
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     [
@@ -49,5 +30,12 @@ export default {
       },
     ],
   ],
-  publicPath:'./'
+  publicPath:'./',
+  // proxy: {
+  //   '/api': {                  
+  //     target: 'https://pvp.qq.com/web201605/js/',
+  //     changeOrigin: true,
+  //     pathRewrite: { '^/api' : '' }
+  //   }
+  // }
 };

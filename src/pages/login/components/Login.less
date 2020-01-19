@@ -1,0 +1,165 @@
+//@import '~@styles/setting.less'; //
+
+@green_color:#00bc70;
+.normal{
+    height: 100vh;
+    display: flex;
+
+    .left{
+        width: calc(100% - 550px);
+        height: 100%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-color: #000;
+        background-size: cover;
+        background-image: url(https://static-fe.anlink.tech/websites/%E7%BC%96%E7%BB%84-40.jpg);
+    }
+
+    .right{
+        width: 550px;
+        height: 100%;
+
+        .rightBox{
+            width: 100%;
+            height: 100%;
+
+            .rightWrap{
+                padding: 20px;
+                height: 100%;
+                
+                .rightBottom{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    height: calc(100% - 44px);
+
+                    .rightContent{
+                        width: 310px;
+                        position: relative;
+                        left:5px;
+                        bottom: 50px;
+
+                        .webName{
+                            font-size: 32px;
+                            font-weight: 500;
+                            color: #000;
+                        }
+
+                        .title{
+                            font-size: 16px;
+                            color: #616161;
+                            margin: 6px 0;
+                        }
+                        .error{
+                            height: 37px;
+                        }
+                        ._Alert{
+                            border:none;
+                            font-size: 12px !important;
+                            line-height: 1.6 !important;
+                            span{
+                                color: #FF5050 !important;
+                            }
+                        }
+                        .inputGroup{
+                            width: 100%;
+
+                            .inputItem{
+                                position: relative;
+                                height: 50px;
+                                
+                                .inputItemLabel{
+                                    color: #bcbcbc;
+                                    font-size: 14px;
+                                    transform: translateY(20px);
+                                    transition-duration: .3s;
+                                    position: relative;
+                                    font-weight: 400;
+                                    z-index: 2;
+                                }
+                                .inputItemLabelFocus{
+                                    font-size: 12px;
+                                    transition-duration: .3s;
+                                    z-index: 2;
+                                    color:@green_color;
+                                }
+
+
+                                .inputItemLabelGray{
+                                    font-size: 12px;
+                                    transition-duration: .3s;
+                                    z-index: 2;
+                                    color: #bcbcbc;
+                                }
+
+                                // 输入框
+                                .formInp{
+                                    width: 100%;
+                                    color: #000;
+                                    font-size: 14px;
+                                    padding: 0;
+                                    font-weight: 300;
+                                    border-radius: 0;
+                                    border: none;
+                                    border-bottom: 1px solid #e6e6e6;
+                                    position: relative;
+                                    z-index: 3;
+                                    outline: none;
+                                    background: none;
+                                }
+                                // 聚焦状态
+                                .focus{
+                                    border-bottom: 2px solid @green_color;
+                                }
+                                
+
+                                .wrapInput{
+                                    color: #ccc;
+                                    position: relative;
+
+                                    .icon{
+                                        font-size: 20px;
+                                        position: absolute;
+                                        right: 0;
+                                        z-index: 10;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                            
+                            
+                        }
+
+
+                        .submitBtn{
+                            height: 40px;
+                            color: #fff;
+                            font-size: 14px;
+                            line-height: 40px;
+                            text-align: center;
+                            font-weight: 400;
+                            border-radius: 5px;
+                            margin-top: 38px;
+                            background: @green_color;
+                            user-select: none;
+                            cursor: pointer;
+                        }
+                        .disabled{
+                           background: rgba(0, 188, 112, 0.6);
+                           cursor: not-allowed;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
